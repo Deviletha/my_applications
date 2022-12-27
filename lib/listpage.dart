@@ -95,7 +95,7 @@ class listpage extends StatelessWidget{
                 ],
               ),
             ),
-          )
+          ),
         ],
     ),
     );
