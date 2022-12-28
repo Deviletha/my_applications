@@ -3,7 +3,11 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_applications/Grid_with_Builder.dart';
+import 'package:my_applications/Gridview%20vith%20extent.dart';
+import 'package:my_applications/Gridview_custom.dart';
+import 'package:my_applications/StackDemo.dart';
 import 'package:my_applications/gridview.dart';
+import 'package:my_applications/gridview_with_count.dart';
 import 'package:my_applications/homepage.dart';
 import 'package:my_applications/listview_custom.dart';
 import 'package:my_applications/login%20with%20validation.dart';
@@ -25,7 +29,7 @@ class SplashScreen extends StatefulWidget{
 class _SplashScreenState extends State {
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 5), () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Grid_with_builder()));
+    Timer(const Duration(seconds: 5), () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Gridview_Extent()));
     });
 
   }
