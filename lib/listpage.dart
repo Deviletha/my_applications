@@ -5,13 +5,13 @@ class listpage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Music Instruemnt Stores"),
-      ),
+      // appBar: AppBar(
+      //   title: Text("Music Instruemnt Stores"),
+      // ),
       body: ListView(
         children: [
           Card(
-            color: Colors.green,
+            color: Colors.white,
             child: ListTile(
               title: Text(" Instrument Store 1"),
               subtitle: Text("description"),
@@ -29,7 +29,7 @@ class listpage extends StatelessWidget{
             ),
           ),
           Card(
-              color: Colors.green,
+              color: Colors.white,
               child: ListTile(
                 title: Text(" Instrument Store 2"),
                 subtitle: Text("description"),
@@ -46,7 +46,7 @@ class listpage extends StatelessWidget{
               ),
             ),
           Card(
-            color: Colors.green,
+            color: Colors.white,
             child: ListTile(
               title: Text(" Instrument Store 3"),
               subtitle: Text("description"),
@@ -63,7 +63,7 @@ class listpage extends StatelessWidget{
             ),
           ),
           Card(
-            color: Colors.green,
+            color: Colors.white,
             child: ListTile(
               title: Text(" Instrument Store 4"),
               subtitle: const Text("description"),
@@ -80,7 +80,7 @@ class listpage extends StatelessWidget{
             ),
           ),
           Card(
-            color: Colors.green,
+            color: Colors.white,
             child: ListTile(
               title: Text(" Instrument Store 5"),
               subtitle: Text("description"),

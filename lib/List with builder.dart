@@ -21,7 +21,7 @@ class List_with_Builder extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("LIST WITH BUILDER"),),
+      // appBar: AppBar(title: Text("LIST WITH BUILDER"),),
       body: ListView.builder(
           itemBuilder: (BuildContext context,int index){
             return Card(

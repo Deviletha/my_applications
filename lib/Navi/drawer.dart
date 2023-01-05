@@ -30,7 +30,8 @@ class Navdrawer extends StatelessWidget {
                     backgroundImage: NetworkImage("https://images.unsplash.com/photo-1616769364512-1e50e8266907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&w=1000&q=80"),),
                 ],
                 decoration: BoxDecoration(image: DecorationImage(image: NetworkImage("https://media.istockphoto.com/id/1223738331/photo/panoramic-59-mpix-xxxxl-size-view-of-mount-ama-dablam-in-himalayas-nepal.jpg?b=1&s=170667a&w=0&k=20&c=cGqrdcvB6qqL8B2KPySr8yGE7Uh_sBSNpx3xJR-iYe0="),
-                    fit: BoxFit.cover)),
+                    fit: BoxFit.cover)
+                ),
               ),
               ListTile(
                 leading: Icon(Icons.home),

@@ -31,7 +31,7 @@ class SplashScreen extends StatefulWidget{
 class _SplashScreenState extends State {
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 5), () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Navdrawer()));
+    Timer(const Duration(seconds: 5), () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Staggered_grid()));
     });
 
   }
