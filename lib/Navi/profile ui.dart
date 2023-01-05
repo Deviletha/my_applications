@@ -39,11 +39,11 @@ class Profile_UI extends StatelessWidget {
               child: CircleAvatar(
                 backgroundImage: AssetImage(
                     "assets/icons/601074e4-4a6e-4339-9f7e-3bb718dc1910.jpeg"),
-                radius: 65,
+                radius: 75,
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 0.1,
             ),
             Row(
               children: [
