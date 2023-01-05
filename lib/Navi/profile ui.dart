@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,18 +8,20 @@ void main() {
 }
 
 class Profile_UI extends StatelessWidget {
+  const Profile_UI({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white,
-        title: Icon(
+        backgroundColor: Colors.white70,
+        title: const Icon(
           Icons.arrow_back,
           color: Colors.black,
           size: 30,
         ),
-        actions: [
+        actions: const [
           Icon(
             Icons.menu,
             color: Colors.black,
@@ -31,48 +32,37 @@ class Profile_UI extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Center(
-              heightFactor: 1.5,
+      body: ListView(
+        children: [
+          Center(
+            child: Container(
               child: CircleAvatar(
                 backgroundImage: AssetImage(
                     "assets/icons/601074e4-4a6e-4339-9f7e-3bb718dc1910.jpeg"),
                 radius: 75,
               ),
             ),
-            SizedBox(
-              height: 0.1,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 105,
-                ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 70, right: 70, top: 25),
+            height: 40,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
                 CircleAvatar(
                   backgroundImage: AssetImage("assets/icons/facebook.png"),
                   radius: 20,
                   backgroundColor: Colors.white,
-                ),
-                SizedBox(
-                  width: 15,
                 ),
                 CircleAvatar(
                   backgroundImage: AssetImage("assets/icons/twitter.png"),
                   radius: 20,
                   backgroundColor: Colors.white,
                 ),
-                SizedBox(
-                  width: 15,
-                ),
                 CircleAvatar(
                   backgroundImage: AssetImage("assets/icons/linkedin.png"),
                   radius: 20,
                   backgroundColor: Colors.white,
-                ),
-                SizedBox(
-                  width: 15,
                 ),
                 CircleAvatar(
                   backgroundImage: AssetImage("assets/icons/github.png"),
@@ -81,120 +71,118 @@ class Profile_UI extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Text(
-              "Deviletha Sai",
-              style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Text("@developer",
-                style: TextStyle(fontSize: 20, color: Colors.blueGrey)),
-            SizedBox(
-              height: 10,
-            ),
-            Text("Junior Flutter Developer",
-                style: TextStyle(fontSize: 25, color: Colors.black)),
-            Container(
-
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 20, right: 20, top: 20, bottom: 6),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.grey[300],
-                            borderRadius: BorderRadius.circular(30)),
-                        child: ListTile(
-                          title: Text("Privacy"),
-                          leading: Icon(Icons.privacy_tip_outlined),
-                          trailing: Icon(Icons.arrow_forward_ios_rounded),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 20, right: 20, top: 6, bottom: 6),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.grey[300],
-                            borderRadius: BorderRadius.circular(30)),
-                        child: ListTile(
-                          title: Text("Purchase History"),
-                          leading: Icon(Icons.query_builder_outlined),
-                          trailing: Icon(Icons.arrow_forward_ios_rounded),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 20, right: 20, top: 6, bottom: 6),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.grey[300],
-                            borderRadius: BorderRadius.circular(30)),
-                        child: ListTile(
-                          title: Text("Help & Support"),
-                          leading: Icon(Icons.error_outline),
-                          trailing: Icon(Icons.arrow_forward_ios_rounded),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 20, right: 20, top: 6, bottom: 6),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.grey[300],
-                            borderRadius: BorderRadius.circular(30)),
-                        child: ListTile(
-                          title: Text("Settings"),
-                          leading: Icon(Icons.settings),
-                          trailing: Icon(Icons.arrow_forward_ios_rounded),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 20, right: 20, top: 6, bottom: 6),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.grey[300],
-                            borderRadius: BorderRadius.circular(30)),
-                        child: ListTile(
-                          title: Text("Invite a friend"),
-                          leading: Icon(Icons.person_add_alt_1_outlined),
-                          trailing: Icon(Icons.arrow_forward_ios_rounded),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 20, right: 20, top: 6, bottom: 6),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.grey[300],
-                            borderRadius: BorderRadius.circular(30)),
-                        child: ListTile(
-                          title: Text("Log Out"),
-                          leading: Icon(Icons.logout),
-                          trailing: Icon(Icons.arrow_forward_ios_rounded),
-                        ),
-                      ),
-                    ),
-                  ],
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 50, right: 50, top: 30),
+            height: 80,
+            child: Column(
+              children: const [
+                Text(
+                  "Deviletha Sai",
+                  style: TextStyle(
+                      fontSize: 35,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
                 ),
+                Text(
+                  "@developer",
+                  style: TextStyle(fontSize: 20, color: Colors.blueGrey),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 50,
+            margin: const EdgeInsets.only(
+              left: 30,
+              right: 30,
+            ),
+            child: Column(
+              children: const [
+                Text(
+                  "Junior Flutter Developer",
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500),
+                )
+              ],
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 35, right: 35),
+            height: MediaQuery.of(context).size.height * 0.4,
+            width: MediaQuery.of(context).size.width * 0.2,
+            child: SingleChildScrollView(
+              child: Column(
+                children: const [
+                  ProfTile(
+                    text: "Privacy",
+                    icon: Icon(
+                      Icons.privacy_tip_outlined,
+                      color: Colors.black,
+                    ),
+                  ),
+                  ProfTile(
+                    text: "Purchase History",
+                    icon: Icon(Icons.history,
+                        color: Colors.black),
+                  ),
+                  ProfTile(
+                    text: "Help & Support",
+                    icon: Icon(Icons.help_outline_sharp,
+                        color: Colors.black),
+                  ),
+                  ProfTile(
+                    text: "Settings",
+                    icon: Icon(Icons.settings,
+                        color: Colors.black),
+                  ),
+                  ProfTile(
+                    text: "Invite a friend",
+                    icon: Icon(Icons.person_add_alt_1_outlined,
+                        color: Colors.black),
+                  ),
+                  ProfTile(
+                    text: "Log Out",
+                    icon: Icon(Icons.logout,
+                        color: Colors.black),
+                  ),
+                ],
               ),
-            )
-          ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class ProfTile extends StatelessWidget {
+  const ProfTile({
+    Key? key,
+    required this.text,
+    required this.icon,
+  }) : super(key: key);
+
+  final String text;
+  final Icon icon;
+
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(top: 15, bottom: 10),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(30), color: Colors.grey[300]),
+      child: ListTile(
+        dense: true,
+        title: Text(
+          text,
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+        ),
+        leading: icon,
+        trailing: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.black,
         ),
       ),
     );
