@@ -193,6 +193,7 @@ class Hotel_details extends StatelessWidget {
                   )
                 ],
               ),
+
             ),
           ],
         ),
