@@ -9,7 +9,7 @@ class Second extends StatelessWidget{
     //fetch the id from the previous page
     final ProductId = ModalRoute.of(context)?.settings.arguments;
     
-    final Product = dummyproducts.firstWhere((element) => data)
+    final Product = dummyproducts.firstWhere((data) => data["ID"] == ProductId);
     return Scaffold(
       appBar: AppBar(
         title: Text("Product Details"),
@@ -17,9 +17,10 @@ class Second extends StatelessWidget{
       body: Padding(padding: EdgeInsets.all(20),
       child: Column(
         children: [
-          Text(),
-          Text(),
-          Text(),
+          Image.asset(Product["image"]),
+          Text("${Product["ID"].toString()}"),
+          Text("${Product["Name"]}"),
+          Text("${Product["description"]}"),
         ],
       ),
       ),

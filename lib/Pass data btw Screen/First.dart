@@ -16,18 +16,20 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Product List"),
-      ),
-      body: ListView(
+        appBar: AppBar(
+          title: Text("Product List"),
+        ),
+        body: ListView(
           padding: EdgeInsets.all(15),
-          children: dummyproducts
-              .map((product) => TextButton(
-                  onPressed: gonextpage(context, product["ID"].toString()),
-                  child: Text(product["Name"])))
-              .toList()),
-    );
+          children: dummyproducts.map((e) {
+            return TextButton(
+                onPressed: () => gonextpage(context, e["ID"]),
+                child: Text("${e["Name"]}"));
+          }).toList(),
+        ));
   }
 
-  gonextpage(BuildContext context, product) {}
+  void gonextpage(BuildContext context, product) {
+    Navigator.of(context).pushNamed("Second", arguments: product);
+  }
 }
