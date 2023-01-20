@@ -36,6 +36,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.1"
+  circular_placeholder:
+    dependency: "direct main"
+    description:
+      name: circular_placeholder
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   clock:
     dependency: transitive
     description:

@@ -26,7 +26,8 @@ class FirstScreen extends StatelessWidget {
                 onPressed: () => gonextpage(context, e["ID"]),
                 child: Text("${e["Name"]}"));
           }).toList(),
-        ));
+        )
+    );
   }
 
   void gonextpage(BuildContext context, product) {

@@ -15,7 +15,7 @@ List<Map<String,dynamic>> dummyproducts = [
     "ID" : 3,
     "Name" : "Product 3",
     "description" : "Very nice product with name Product 3",
-    "image " : "assets/icons/bmw-mini-icon.png"
+    "image" : "assets/icons/bmw-mini-icon.png"
   },
   {
     "ID" : 4,
