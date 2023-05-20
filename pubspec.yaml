@@ -40,6 +40,9 @@ dependencies:
   circular_placeholder: ^0.1.1
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  rive: ^0.10.2
+  email_validator:
+  get:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -49,6 +52,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner:
+  hive_generator:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -72,6 +77,7 @@ flutter:
   assets:
     - assets/
     - assets/icons/
+    - assets/rive/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
